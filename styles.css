@@ -39,6 +39,16 @@ body {
   overflow-x: hidden;
 }
 
+code {
+  padding: 0.08em 0.34em;
+  border: 1px solid rgba(124, 231, 219, 0.18);
+  border-radius: 0.45em;
+  color: var(--accent-3);
+  background: rgba(18, 199, 178, 0.08);
+  font-family: "Space Grotesk", monospace;
+  font-size: 0.94em;
+}
+
 img {
   display: block;
   width: 100%;
@@ -85,6 +95,7 @@ button {
 }
 
 .site-header {
+  width: min(100%, var(--container));
   max-width: var(--container);
   margin: 0 auto;
   padding: 28px 24px 8px;
@@ -127,6 +138,8 @@ button {
 }
 
 .header-nav {
+  min-width: 0;
+  max-width: 100%;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -156,6 +169,7 @@ button {
 }
 
 .section {
+  width: min(100%, var(--container));
   max-width: var(--container);
   margin: 0 auto;
   padding: 58px 24px;
@@ -496,6 +510,12 @@ button {
   object-fit: contain;
 }
 
+.browser-shot img {
+  background: #f6fbff;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .gallery-card figcaption {
   padding: 16px 18px 18px;
   color: var(--text-soft);
@@ -597,6 +617,7 @@ button {
 }
 
 .site-footer {
+  width: min(100%, var(--container));
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 24px 42px;
@@ -698,6 +719,12 @@ button {
     overflow-wrap: anywhere;
   }
 
+  .hero-copy {
+    width: min(100%, calc(100vw - 40px));
+    max-width: calc(100vw - 40px);
+    overflow: visible;
+  }
+
   .hero-points li {
     overflow-wrap: anywhere;
   }
@@ -732,6 +759,10 @@ button {
 
   .gallery-card-wide img {
     aspect-ratio: 10 / 16;
+  }
+
+  .browser-shot img {
+    aspect-ratio: 16 / 10;
   }
 
   .journey-shell {
@@ -792,6 +823,21 @@ button {
 
   .section-heading h2 {
     font-size: 1.85rem;
+  }
+
+  .hero-copy,
+  .hero-text,
+  .hero-points,
+  .hero-points li {
+    max-width: min(280px, calc(100vw - 72px));
+  }
+
+  .hero-visual {
+    justify-items: start;
+  }
+
+  .device-tall {
+    width: min(292px, calc(100vw - 56px));
   }
 
   .journey-step {

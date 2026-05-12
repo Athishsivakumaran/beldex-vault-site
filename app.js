@@ -10,7 +10,7 @@ const journeyData = [
       "Keyboard-safe layout for compact phones",
     ],
     image: "./assets/screenshots/v2.2-emulator/pixel4a-emu-screenshot.png",
-    alt: "Latest emulator vault access setup screen",
+    alt: "BELDEX Vault access setup screen",
   },
   {
     label: "Step 2",
@@ -23,7 +23,7 @@ const journeyData = [
       "Clear messages for unavailable biometric paths",
     ],
     image: "./assets/screenshots/v2.2-emulator/pixel4a-step2-ready-finish.png",
-    alt: "Latest emulator password protection screen",
+    alt: "BELDEX Vault password protection screen",
   },
   {
     label: "Step 3",
@@ -36,11 +36,11 @@ const journeyData = [
       "Secure notes and encrypted document attachments",
     ],
     image: "./assets/screenshots/v2.2-emulator/pixel4a-add-account-latest.png",
-    alt: "Latest emulator add account screen",
+    alt: "BELDEX Vault add account screen",
   },
   {
     label: "Step 4",
-    title: "Search, filter, and review quickly",
+    title: "Search, filter, and find records quickly",
     text:
       "Home and Contacts keep saved records easy to find as the vault grows, including date and coin amount filtering.",
     bullets: [
@@ -49,33 +49,33 @@ const journeyData = [
       "Completion and reminder status stay visible",
     ],
     image: "./assets/screenshots/v2.2-emulator/pixel4a-filter-sheet-latest.png",
-    alt: "Latest emulator filter sheet with date and coin range",
+    alt: "BELDEX Vault filter sheet with date and coin range",
   },
   {
     label: "Step 5",
     title: "Verify before Nexus access",
     text:
-      "Nexus helper verifies the user first, copies a short credential payload, opens Nexus in-app, and offers Chrome fallback when needed.",
+      "Nexus helper verifies the user first, copies a short credential payload, opens Nexus, and offers browser fallback when manual paste is safer.",
     bullets: [
       "No old copy-helper page",
       "Short clipboard format: A/c and Pwd",
       "Clipboard clears automatically when possible",
     ],
-    image: "./assets/screenshots/v2.2-emulator/pixel4a-documents-form-latest.png",
-    alt: "Latest emulator secure notes and documents screen",
+    image: "./assets/screenshots/v2.2-emulator/nexus-login-browser-latest.png",
+    alt: "Nexus sign-in page opened from BELDEX Vault fallback flow",
   },
   {
     label: "Step 6",
     title: "Back up and restore safely",
     text:
-      "Encrypted `.beldexvault` backup files help users move to a new phone without exposing raw vault data.",
+      "Encrypted .beldexvault backup files help users move to a new phone without exposing raw vault data.",
     bullets: [
       "Stronger backup password rule",
       "Restore confirmation before replacing data",
       "Documents are included through encrypted backup content",
     ],
     image: "./assets/screenshots/v2.2-emulator/pixel4a-backup-restore-latest.png",
-    alt: "Latest emulator backup and restore screen",
+    alt: "BELDEX Vault backup and restore screen",
   },
 ];
 
