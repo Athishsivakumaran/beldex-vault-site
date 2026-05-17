@@ -40,6 +40,19 @@ const journeyData = [
   },
   {
     label: "Step 4",
+    title: "Store transfer details in Safe Vault",
+    text:
+      "Safe Vault keeps crypto-transfer context separate from account records, guarded by the same protected verification flow.",
+    bullets: [
+      "Key name, description, and protected value",
+      "Useful for addresses, memo notes, TxIDs, and exchange references",
+      "Encrypted files and images stay attached to the item",
+    ],
+    image: "./assets/screenshots/v2.2-emulator/safe-vault-detail-latest.png",
+    alt: "BELDEX Vault Safe Vault item detail screen",
+  },
+  {
+    label: "Step 5",
     title: "Search, filter, and find records quickly",
     text:
       "Home and Contacts keep saved records easy to find as the vault grows, including date and coin amount filtering.",
@@ -52,12 +65,12 @@ const journeyData = [
     alt: "BELDEX Vault filter sheet with date and coin range",
   },
   {
-    label: "Step 5",
+    label: "Step 6",
     title: "Verify before Nexus access",
     text:
       "Nexus helper verifies the user first, copies a short credential payload, opens Nexus, and offers browser fallback when manual paste is safer.",
     bullets: [
-      "No old copy-helper page",
+      "Verify-first credential access",
       "Short clipboard format: A/c and Pwd",
       "Clipboard clears automatically when possible",
     ],
@@ -65,7 +78,7 @@ const journeyData = [
     alt: "Nexus sign-in page opened from BELDEX Vault fallback flow",
   },
   {
-    label: "Step 6",
+    label: "Step 7",
     title: "Back up and restore safely",
     text:
       "Encrypted .beldexvault backup files help users move to a new phone without exposing raw vault data.",

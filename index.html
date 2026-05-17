@@ -7,10 +7,10 @@
   <meta name="theme-color" content="#0d1821">
   <meta
     name="description"
-    content="BELDEX Vault helps users create, protect, search, recover, and manage BELDEX account records with encrypted backups, documents, live prices, news, reminders, and secure Nexus access."
+    content="BELDEX Vault helps users create, protect, search, recover, and manage BELDEX account records with Safe Vault items, encrypted backups, documents, live prices, news, reminders, and secure Nexus access."
   >
   <meta property="og:title" content="BELDEX Vault">
-  <meta property="og:description" content="Secure BELDEX account setup, protected records, encrypted recovery, and daily tools in one mobile-first vault.">
+  <meta property="og:description" content="Secure BELDEX account setup, protected records, Safe Vault transfer details, encrypted recovery, and daily tools in one mobile-first vault.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,7 @@
     </a>
     <nav class="header-nav" aria-label="Main navigation">
       <a href="#overview">Overview</a>
+      <a href="#safe-vault">Safe Vault</a>
       <a href="#journey">Flow</a>
       <a href="#screens">Screens</a>
       <a href="#security">Security</a>
@@ -45,7 +46,7 @@
         <h1>Secure BELDEX account vault.</h1>
         <p class="hero-text">
           BELDEX Vault keeps BELDEX accounts, protected passwords, live prices, news, reminders,
-          documents, backups, and Nexus access in one focused mobile app.
+          Safe Vault items, documents, backups, and Nexus access in one focused mobile app.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#journey">See the app flow</a>
@@ -53,7 +54,7 @@
         </div>
         <ul class="hero-points">
           <li>Two-step onboarding for vault access and password protection</li>
-          <li>Encrypted records, secure notes, documents, and backup restore</li>
+          <li>Encrypted records, Safe Vault items, documents, and backup restore</li>
           <li>Live prices, News, reminders, filters, and Nexus helper built in</li>
         </ul>
       </div>
@@ -74,9 +75,9 @@
             <p>Export and restore vault data using a protected <code>.beldexvault</code> file.</p>
           </article>
           <article class="metric-card metric-card-wide">
-            <span class="metric-label">Daily use</span>
-            <strong>Search, filter, verify, open</strong>
-            <p>Find records by name, ID, date, or coin amount, then verify before sensitive actions.</p>
+            <span class="metric-label">Safe Vault</span>
+            <strong>Transfer-critical details</strong>
+            <p>Keep wallet addresses, network notes, exchange PINs, TxIDs, and proof files protected.</p>
           </article>
         </div>
       </div>
@@ -102,6 +103,11 @@
           <span class="feature-kicker">Organize</span>
           <h3>Records with context</h3>
           <p>Save account ID, password details, email, phone, coin amount, secure notes, documents, and reminders.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-kicker">Safekeep</span>
+          <h3>Safe Vault</h3>
+          <p>Store protected crypto-transfer details such as wallet addresses, exchange PINs, memo notes, TxIDs, and support references.</p>
         </article>
         <article class="feature-card reveal">
           <span class="feature-kicker">Recover</span>
@@ -134,8 +140,54 @@
             <h3>Nexus helper with fallback</h3>
             <p>Verify first, copy the short credential payload, open Nexus in-app, and use the Chrome fallback when manual paste is safer.</p>
           </article>
+          <article class="glass-card reveal">
+            <h3>Safe Vault for transfer prep</h3>
+            <p>Keep exchange instructions, network reminders, support ticket IDs, and transfer proof files in a protected page below News.</p>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="section safe-vault-section" id="safe-vault">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Safe Vault</p>
+        <h2>Protect the small details that make crypto transfers go right.</h2>
+        <p class="section-intro">
+          Successful crypto transfers depend on exact details: the right address, network, memo or tag when required, exchange security steps, and proof of what was sent. Safe Vault keeps that context protected without mixing it into account cards.
+        </p>
+      </div>
+      <div class="safe-vault-layout">
+        <div class="safe-vault-copy reveal">
+          <article class="vault-example-card">
+            <span>01</span>
+            <h3>Transfer destinations</h3>
+            <p>Save receive addresses, exchange withdrawal addresses, network names, memo/tag requirements, and notes about when an address was last verified.</p>
+          </article>
+          <article class="vault-example-card">
+            <span>02</span>
+            <h3>Exchange and access references</h3>
+            <p>Keep exchange PIN references, withdrawal checklist notes, support ticket IDs, and security-step reminders behind the same password protection flow.</p>
+          </article>
+          <article class="vault-example-card">
+            <span>03</span>
+            <h3>Proof and recovery context</h3>
+            <p>Attach encrypted screenshots, PDFs, transaction references, TxIDs, or confirmation files so transfer history is easier to review later.</p>
+          </article>
+        </div>
+        <div class="safe-vault-visual reveal">
+          <figure class="gallery-card safe-vault-shot">
+            <img src="./assets/screenshots/v2.2-emulator/safe-vault-page-latest.png" alt="BELDEX Vault Safe Vault page with protected item cards">
+            <figcaption>Safe Vault opens after verification and keeps protected items separate from accounts.</figcaption>
+          </figure>
+          <figure class="gallery-card safe-vault-shot safe-vault-shot-secondary">
+            <img src="./assets/screenshots/v2.2-emulator/safe-vault-detail-latest.png" alt="BELDEX Vault Safe Vault item detail with editable protected value and attachments">
+            <figcaption>Each item has a key name, description, protected value, and encrypted attachments.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="safe-vault-note reveal">
+        Safe Vault helps users organize transfer information, but users should still verify current addresses, networks, and exchange instructions before sending cryptocurrency.
+      </p>
     </section>
 
     <section class="section journey-section" id="journey">
@@ -160,14 +212,18 @@
           </button>
           <button class="journey-step" data-step="3" type="button">
             <span>04</span>
-            <strong>Search and filter</strong>
+            <strong>Safe Vault</strong>
           </button>
           <button class="journey-step" data-step="4" type="button">
             <span>05</span>
-            <strong>Nexus helper</strong>
+            <strong>Search and filter</strong>
           </button>
           <button class="journey-step" data-step="5" type="button">
             <span>06</span>
+            <strong>Nexus helper</strong>
+          </button>
+          <button class="journey-step" data-step="6" type="button">
+            <span>07</span>
             <strong>Backup and restore</strong>
           </button>
         </div>
@@ -213,6 +269,18 @@
         <figure class="gallery-card reveal">
           <img src="./assets/screenshots/v2.2-emulator/pixel4a-news-latest.png" alt="BELDEX Vault News page with All, Blog, X, and Coindar filters">
           <figcaption>News with source filters</figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="./assets/screenshots/v2.2-emulator/safe-vault-page-latest.png" alt="BELDEX Vault Safe Vault page showing protected cards and plus action">
+          <figcaption>Safe Vault item list</figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="./assets/screenshots/v2.2-emulator/safe-vault-form-latest.png" alt="BELDEX Vault Safe Vault form with key name, description, value, and attachment actions">
+          <figcaption>Safe Vault add item</figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="./assets/screenshots/v2.2-emulator/safe-vault-detail-latest.png" alt="BELDEX Vault Safe Vault detail page with edit and delete actions">
+          <figcaption>Safe Vault item detail</figcaption>
         </figure>
         <figure class="gallery-card reveal">
           <img src="./assets/screenshots/v2.2-emulator/pixel4a-add-account-latest.png" alt="BELDEX Vault Add account form">
@@ -326,6 +394,13 @@
             <span>Notes</span><span>Documents</span><span>Open</span>
           </div>
         </article>
+        <article class="capability-card reveal">
+          <h3>Safe Vault</h3>
+          <p>Store protected key-value information for transfer preparation, exchange references, and encrypted proof files.</p>
+          <div class="chip-row">
+            <span>Address</span><span>Memo</span><span>TxID</span>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -338,6 +413,10 @@
         <details class="detail-card reveal" open>
           <summary>What BELDEX Vault stores</summary>
           <p>Records can include BELDEX account ID, BELDEX password, transfer password, email, phone, coin amount, secure notes, encrypted documents, reminders, and last-checked context.</p>
+        </details>
+        <details class="detail-card reveal">
+          <summary>What Safe Vault is for</summary>
+          <p>Safe Vault protects standalone items such as wallet addresses, network notes, exchange PIN references, memo or tag reminders, transaction IDs, support ticket references, and encrypted files related to crypto transfers.</p>
         </details>
         <details class="detail-card reveal">
           <summary>How Nexus access works</summary>

@@ -314,7 +314,8 @@ button {
 .overview-grid,
 .security-grid,
 .capability-grid,
-.details-grid {
+.details-grid,
+.safe-vault-copy {
   display: grid;
   gap: 18px;
 }
@@ -333,6 +334,7 @@ button {
 .glass-card,
 .security-card,
 .capability-card,
+.vault-example-card,
 .journey-shell,
 .gallery-card,
 .detail-card,
@@ -347,7 +349,8 @@ button {
 .feature-card,
 .glass-card,
 .security-card,
-.capability-card {
+.capability-card,
+.vault-example-card {
   padding: 22px;
   border-radius: var(--radius-md);
 }
@@ -357,6 +360,7 @@ button {
 .glass-card h3,
 .security-card h3,
 .capability-card h3,
+.vault-example-card h3,
 .journey-copy h3 {
   display: block;
   margin: 0;
@@ -374,6 +378,7 @@ button {
 .glass-card p,
 .security-card p,
 .capability-card p,
+.vault-example-card p,
 .cta-card p {
   margin: 10px 0 0;
   color: var(--text-soft);
@@ -397,12 +402,19 @@ button {
   margin-bottom: 30px;
 }
 
+.section-intro {
+  margin: 16px 0 0;
+  max-width: 76ch;
+  color: var(--text-soft);
+  line-height: 1.78;
+}
+
 .section-heading h2 {
   font-size: clamp(2.05rem, 3.4vw, 3.25rem);
 }
 
 .overview-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .utility-showcase {
@@ -423,6 +435,75 @@ button {
   gap: 18px;
 }
 
+.safe-vault-section {
+  isolation: isolate;
+}
+
+.safe-vault-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.9fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.safe-vault-copy {
+  grid-template-columns: 1fr;
+}
+
+.vault-example-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.vault-example-card span {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #061b22;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  font-weight: 900;
+}
+
+.vault-example-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -56% 40%;
+  height: 110px;
+  border-radius: 999px;
+  background: rgba(18, 199, 178, 0.1);
+  filter: blur(24px);
+}
+
+.safe-vault-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 0.86fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.safe-vault-shot img {
+  aspect-ratio: 10 / 19;
+  object-fit: contain;
+  background: #020607;
+}
+
+.safe-vault-shot-secondary {
+  margin-top: 54px;
+}
+
+.safe-vault-note {
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid rgba(124, 231, 219, 0.2);
+  border-radius: var(--radius-sm);
+  color: var(--text-soft);
+  background: rgba(18, 199, 178, 0.07);
+  line-height: 1.7;
+}
+
 .journey-shell {
   padding: 28px;
   border-radius: var(--radius-lg);
@@ -430,7 +511,7 @@ button {
 
 .journey-steps {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 28px;
 }
@@ -638,6 +719,7 @@ button {
   .hero,
   .journey-content,
   .utility-showcase,
+  .safe-vault-layout,
   .cta-card {
     grid-template-columns: 1fr;
   }
@@ -655,7 +737,7 @@ button {
   }
 
   .journey-steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .cta-card,
@@ -753,6 +835,14 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .safe-vault-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .safe-vault-shot-secondary {
+    margin-top: 0;
+  }
+
   .gallery-card-wide {
     grid-column: auto;
   }
@@ -791,6 +881,7 @@ button {
   .glass-card,
   .security-card,
   .capability-card,
+  .vault-example-card,
   .detail-card summary,
   .cta-card {
     padding: 22px;
